@@ -15,7 +15,7 @@ describe('Verification of registration form', function(){
 	
 	using(input.Datum,function(data, description){
 		
-	it('Verification of different form elements using different locators', function(){
+	it('Verification of different form elements using different locators'+description, function(){
 		
 		var successMessage = "Success! The Form has been submitted successfully!.";
 		
