@@ -60,8 +60,8 @@ describe('Verification of registration form', function(){
    
    });
 	
-    afterEach(function(){
+   afterEach(function(){
 		console.log("Test Execution completed");
-	})
+   })
 	
 });
