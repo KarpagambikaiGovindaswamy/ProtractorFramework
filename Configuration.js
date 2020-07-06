@@ -6,18 +6,30 @@ var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
   directConnect:true,		
   //seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['Checkout.js'],
+  specs: ['Calculator.js'],
   
   capabilities: {
 	  'browserName': 'chrome'
+	   /*chromeOptions: {
+	     args: [ "--headless", "--disable-gpu", "--window-size=1980,1080" ]
+	   }*/
 	  /*'browserName': 'firefox',
 	  'moz:firefoxOptions': {
-	    'args': ['--safe-mode']
+	    'args': ["--safe-mode", "--headless"]
 	  }*/
 	  /*'browserName': 'internet explorer',
 	    'ensureCleanSession':'true',
       'ignoreProtectedModeSettings': 'true'*/
   },
+  
+  /*multiCapabilities: [{
+	  'browserName': 'firefox',
+	  'moz:firefoxOptions': {
+		    'args': ['--safe-mode']
+	   }
+	}, {
+	  'browserName': 'chrome'
+	}],*/
   
   onPrepare: function() {
 	  browser.driver.manage().window().maximize();
@@ -30,7 +42,7 @@ exports.config = {
    
    suites:{
 	   SmokeTest: 'Registration.js',
-	   RegressionTest: ['Registration.js','Checkout.js']
+	   RegressionTest: ['Registration.js','Checkout.js','Calculator.js','NonAngular.js']
    },
 
   jasmineNodeOpts: {
