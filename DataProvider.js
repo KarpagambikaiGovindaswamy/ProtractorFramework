@@ -28,5 +28,15 @@ module.exports=
 		  dob:"12-06-2018"
 		}
 	
-	}
+	},
+
+	Register:
+	{
+		RegisterInput:
+    	{
+    	  name: "K",
+		  email: "Karpagam_test@gmail.com"
+    	}
+	}	
+    
 }

@@ -13,6 +13,8 @@ function registration(){
 	this.radioButton= element.all(by.name("inlineRadioOptions"));
 	this.submit= element(by.buttonText('Submit'));
 	this.successMsg= element(by.css("div[class*='alert-success']"));
+	this.errorMsg = element(by.css("div[class*='alert-danger']"));
+	this.allErrorMsgs = element.all(by.css("div[class*='alert-danger']"));
 	
 };
 
