@@ -2,6 +2,8 @@ Concepts Covered:
 
 	Using Different locator types and form elements
 	Chain locators
+	Executing only specific it Specs - "f"
+	Disabling it Specs - "x" similarly for describe blocks too
 	POM design pattern
 	Data driven testing - Module pattern JS
 	Jasmine assertions

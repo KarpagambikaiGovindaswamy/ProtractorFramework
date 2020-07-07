@@ -6,7 +6,7 @@ var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
   directConnect:true,		
   //seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['Calculator.js'],
+  specs: ['Registration.js'],
   
   capabilities: {
 	  'browserName': 'chrome'

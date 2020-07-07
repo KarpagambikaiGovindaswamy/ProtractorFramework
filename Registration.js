@@ -16,7 +16,7 @@ describe('Verification of registration form', function(){
 	
 	using(input.Datum,function(data, description){
 		
-		it('Verification of different form elements using different locators '+description, function(){
+		fit('Verification of different form elements using different locators '+description, function(){
 					
 			//Different Locators
 			register.name.sendKeys(data.name);
@@ -48,7 +48,7 @@ describe('Verification of registration form', function(){
 	
    using(input.Register,function(data, description){	
 	   
-	   it('Validation Message Verification', function(){
+	   xit('Validation Message Verification', function(){
 						
 		  register.name.sendKeys(data.name);
 		  register.email.sendKeys(data.email);
